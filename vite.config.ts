@@ -10,10 +10,6 @@ import { visualizer } from "rollup-plugin-visualizer";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
 	// base: "",
-	server: {
-		// vite server configs, for details see [vite doc](https://vitejs.dev/config/#server-host)
-		port: Number(process?.env?.APP_CLIENT_PORT || 3001),
-	},
 	plugins: [
 		viteImagemin({
 			gifsicle: {

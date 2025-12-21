@@ -5,8 +5,8 @@ const getData = async () => {
 	try {
 
 		// "https://api.github.com/users/softeng";
-		const response = await fetch(`http://localhost:3002/hello`);
-		const data = await response.text();
+		const response = await fetch(`http://localhost:5001/hello`);
+		const data = await response.json();
 
 		if (response.ok) {
 			Data.value = data;
@@ -27,6 +27,7 @@ const getData = async () => {
 </script>
 
 <template>
+	<h1>Welcome by VueJs</h1>
 	h1 Using fetch
 	<button @click="getData"> fetch </button>
 	<div>
@@ -37,7 +38,7 @@ const getData = async () => {
 			<img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
 		</a>
 	</div>
-	<h2>{{ Data }}</h2>
+	<h2>{{ Data.message }}</h2>
 </template>
 
 <style scoped>

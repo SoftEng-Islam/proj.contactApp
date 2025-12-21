@@ -1,0 +1,16 @@
+meta {
+  name: GET | Get All Contacts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/contacts/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
