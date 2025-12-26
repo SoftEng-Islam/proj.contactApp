@@ -44,8 +44,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/cyber-todo.git
-   cd cyber-todo
+   git clone https://github.com/SoftEng-Islam/proj.todo.git
+   cd proj.todo
    ```
 
 2. **Install dependencies**
@@ -57,7 +57,7 @@
    Create a `.env` file in the root directory:
    ```env
    PORT=3000
-   CONNECTION_STRING=mongodb://127.0.0.1:27017/cybertodo
+   CONNECTION_STRING=mongodb://127.0.0.1:27017/todo_app
    ```
 
 ### Running the App
@@ -73,7 +73,7 @@
    pnpm run dev
    ```
 
-   Visit `http://localhost:3000/todo` to see the app in action!
+   Visit `http://localhost:5001/` to see the app in action!
 
 ## 🔧 Troubleshooting
 
